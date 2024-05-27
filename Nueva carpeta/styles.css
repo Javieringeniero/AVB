@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #d60000, #000000);
+    color: white;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1.gamer-title {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 24px;
+    margin: 20px 0;
+    color: #ffd700; /* Oro, para que haga buen contraste */
+}
+
+h2 {
+    text-align: center;
+    margin: 20px 0;
+    color: #ffd700; /* Oro, para que haga buen contraste */
+}
+
+#consolas-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.consola {
+    border: 2px solid #ffd700;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 8px;
+    text-align: center;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: transform 0.3s, background-color 0.3s;
+    flex: 1 1 calc(33% - 32px); /* Ajuste de ancho para flexbox */
+    box-sizing: border-box;
+    min-width: 250px; /* Asegura un tamaño mínimo en pantallas pequeñas */
+}
+
+.consola:hover {
+    transform: scale(1.1);
+    background-color: rgba(255, 215, 0, 0.7);
+}
+
+#form-container {
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+    padding: 20px;
+    border: 2px solid #ffd700;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: left;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label, input, button {
+    width: 100%;
+    margin: 10px 0;
+}
+
+input, button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #ffd700;
+    color: #000;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ff8c00;
+}
+
+#logo {
+    display: block;
+    margin: 20px auto;
+    width: 100px;
+    height: auto;
+}
+
+/* Media Queries para adaptabilidad */
+@media (max-width: 768px) {
+    .consola {
+        flex: 1 1 calc(50% - 32px); /* Ajuste de ancho para pantallas medianas */
+    }
+
+    h1.gamer-title {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .consola {
+        flex: 1 1 calc(100% - 32px); /* Ajuste de ancho para pantallas pequeñas */
+    }
+
+    h1.gamer-title {
+        font-size: 16px;
+    }
+}

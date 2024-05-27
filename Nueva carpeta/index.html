@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consolas Disponibles</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 class="gamer-title">Alquiler de Videojuegos Barrancabermeja</h1>
+    <img id="logo" src="barcelona-logo.png" alt="FC Barcelona Logo">
+    <h2>Consolas Disponibles</h2>
+    <div id="consolas-container"></div>
+    <div id="form-container" style="display: none;">
+        <h2>Formulario de Pedido</h2>
+        <form id="pedido-form">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" name="direccion" required>
+
+            <label for="cedula">Foto de Cédula:</label>
+            <input type="file" id="cedula" name="cedula" accept="image/*" required>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
